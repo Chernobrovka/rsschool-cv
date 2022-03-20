@@ -217,6 +217,28 @@ p
 {
     margin-bottom: 3px;
 }
+.example h3
+{
+    margin-bottom: 10px;
+}
+.example h4
+{
+    margin-bottom: 10px;
+    color: #074968;
+}
+.example p
+{
+    margin-left: 16px;
+    text-transform: uppercase;
+	color:  #656b75;
+	font-weight: 400;
+    margin-bottom: 20px;
+}
+.example .code
+{
+    background-color: #074968;
+    color: #b0b5be; 
+} 
 @media (max-width: 1000px)
 {
 	.container
