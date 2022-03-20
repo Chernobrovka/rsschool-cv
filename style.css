@@ -199,7 +199,24 @@ p
 	height: 100%;
 	background: #03a9f4;
 }
-
+.courses 
+{
+    position: relative;
+    width: 100%;
+    display: grid; 
+    margin-bottom: 40px;  
+}
+.courses .list
+{
+    margin-left: 18px;
+    text-transform: uppercase;
+	color:  #848c99;
+	font-weight: 500;
+}
+.courses .list li 
+{
+    margin-bottom: 3px;
+}
 @media (max-width: 1000px)
 {
 	.container

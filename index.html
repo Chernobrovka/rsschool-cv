@@ -76,8 +76,8 @@
 
 
         <div class="right_Side">
-            <div class="about">
-                <h2 class="title2">Briefly About Myself:</h2>
+            <div class="briefly">
+                <h2 class="title2">Briefly About Myself</h2>
                 <p>In 2020, he entered the University of Technology with a degree in automation of technological processes. In 2021, I studied and did projects in the development of embedded systems and automation. Since 2022, I have been developing in the field of front-end development.</p>
             </div>
 
@@ -114,16 +114,16 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <h2 class="courses">Courses:</h2>
-                <ul>
+            <div class="courses">
+                <h2 class="title2">Courses</h2>
+                <ul class="list">
                     <li>JavaScript Manual on learnjavascript.ru</li>
                     <li>JS / Html / CSS on CodeBasics</li>
                     <li>RS-School stage 1 (in progress)</li>
                 </ul>
             </div>
-            <div>
-                <h2 class="code example">Code Example:</h2>
+            <div class="code example">
+                <h2 class="title2">Code Example:</h2>
                 <p>
                     <b>The solution to the task CodeWars:</b><br>
 
@@ -133,7 +133,32 @@ Your job is to sort these objects across the 4 recycling bins according to their
                 </p>
                 <pre>
                     <code>
-
+                        function recycle(array) {
+                            var arr_materails=['paper','glass','organic','plastic'];  
+                            var arr_baskets=[];
+                            for(let j=0;j<4;j++) {
+                              arr_baskets.push(new Array());
+                            }
+                            array.forEach(function callback(elem, i, arr) 
+                            {
+                              for(let j=0;j<4;j++) 
+                              {
+                                var needAddToBasket = false;
+                                if (elem.material === arr_materails[j])  {
+                                  needAddToBasket = true;
+                                }
+                                if (elem.hasOwnProperty ('secondMaterial')) {
+                                  if (elem.secondMaterial === arr_materails[j]) {
+                                    needAddToBasket = true;
+                                  }
+                                }
+                                if(needAddToBasket) {
+                                  arr_baskets[j].push(elem.type);
+                                }
+                              }
+                            });
+                            return arr_baskets;
+                          }
                     </code>
                 </pre>
             </div>    
