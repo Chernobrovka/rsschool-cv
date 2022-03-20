@@ -1,1 +1,1 @@
-https://Chernobrovka.github.io/rsschool-cv/
+https://Chernobrovka.github.io/rsschool-cv/cv
